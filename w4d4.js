@@ -36,11 +36,11 @@ What percentage of time should be spent thinking about how you're going to solve
 
 //======= Strings =========
 
-const firstVariable = "Hello World"
-firstVariable = 123
-const secondVariable = firstVariable
-secondVariable = "string"
-console.log(firstVariable)
+// const firstVariable = "Hello World"
+// firstVariable = 123
+// const secondVariable = firstVariable
+// secondVariable = "string"
+// console.log(firstVariable)
 //error because we cannot reassign a string
 const yourName = "Johnny"
 console.log(`Hello, my name is ${yourName}`)
@@ -48,3 +48,20 @@ console.log(`Hello, my name is ${yourName}`)
 
 //======== Booleans =========
 
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+console.log(a <= b);
+console.log(c >= d);
+console.log('Name' === 'Name');
+// FOR THE NEXT TWO, USE ONLY && OR ||
+console.log(true || false);
+console.log(false && false && false && false && false || true);
+console.log(false == false)
+console.log(e === 'Kevin');
+console.log(a + b == c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+console.log(a * a == d); // note: the answer is a simple arithmetic equation, not something "weird"
+console.log(48 !== '48');
