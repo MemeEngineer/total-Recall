@@ -79,4 +79,16 @@ if(animal === "cow"){
 
 //========== Driver's Ed =========
 
+const age = 100
+
+if( age > 16){
+    console.log("Here are the keys!")
+}else{
+    console.log("Sorry, you're too young")
+}
+
+//=========== Loops
+
+
+
 
