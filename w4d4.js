@@ -87,7 +87,15 @@ if( age > 16){
     console.log("Sorry, you're too young")
 }
 
-//=========== Loops
+//=========== Loops ================
+// This is GOOD: for(let i = 0; i < 100; i++)
+
+// This is NO GOOD: for(i = 0; i < 100; i++)
+
+//================= The Basics ==============
+
+
+
 
 
 
