@@ -36,3 +36,15 @@ What percentage of time should be spent thinking about how you're going to solve
 
 //======= Strings =========
 
+const firstVariable = "Hello World"
+firstVariable = 123
+const secondVariable = firstVariable
+secondVariable = "string"
+console.log(firstVariable)
+//error because we cannot reassign a string
+const yourName = "Johnny"
+console.log(`Hello, my name is ${yourName}`)
+
+
+//======== Booleans =========
+
