@@ -133,3 +133,22 @@ for( let i = 0; i <= 100; i++){
 
 //======= Savings Account =======
 
+let bank_account= 0;
+
+// for( let i= 1; i <= 10; i++){
+//     bank_account += i
+// }
+// console.log(bank_account)
+
+for(let i= 1; i <= 100; i++){
+    bank_account += i 
+    if(i === 100){
+        bank_account *= 2
+    }
+}
+console.log(bank_account)
+
+//======= Arrays & Control Flow =======
+
+// A Talk About it
+
