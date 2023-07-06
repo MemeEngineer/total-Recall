@@ -351,3 +351,71 @@ for(let i=0; i < strArr.length; i++){
 return word
 }
 console.log(printLongestWord(["hellyesss", "hello", "hellyes"]))
+
+//====== Objects ========
+
+// A. Make a user Object
+
+let user = {
+    name: "bob",
+    email:"bob@gmail.com",
+    age: 49,
+    purchased: []
+
+}
+
+user.email = "bob2@gmail.com"
+user.age++
+console.log(user.age)
+
+user.location = "New York"
+
+console.log(user)
+
+user.purchased.push("carbohydrates", "peace of mind", "merino jodhpurs")
+console.log(user.purchased[2])
+
+user.friend = {
+    name: "Grace Hooper",
+    age: 85,
+    location: "California",
+    purchased: []
+}
+
+console.log(user.friend.name)
+console.log(user.friend.location)
+
+user.friend.age = 55
+
+console.log(user.friend.age)
+
+user.friend.purchased.push("The One Ring", "A Latte")
+
+console.log(user.friend.purchased[1])
+
+
+for( let i = 0; i < user.purchased.length;i++){
+    console.log(user.purchased[i])
+}
+
+for( let i = 0; i < user.friend.purchased.length;i++){
+    console.log(user.friend.purchased[i])
+}
+
+function updateUser(){
+    user.age++
+    user.name.toUpperCase()
+    console.log(user.age)
+    console.log(user.name.toUpperCase())
+}
+
+console.log(updateUser())
+
+function oldAndLoud(person){
+    person.age++
+    person.name.toUpperCase()
+    console.log(person.age)
+    console.log(user.name.toUpperCase())
+}
+
+console.log(oldAndLoud(user))
