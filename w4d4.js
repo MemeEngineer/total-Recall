@@ -286,4 +286,68 @@ const kristynsCloset = [
 
   //======== Functions ==========
 
-  
+  function printGreeting(name){
+    console.log(`Hello there, ${name}`)
+  }
+
+  console.log(printGreeting("Gooby"))
+
+  function calculateCube(num){
+console.log(num*num*num)
+  }
+
+  console.log(calculateCube(5))
+
+  function isVowel(letter){
+    let character = letter.toLowerCase()
+    if( character === "a" || character === "e" || character === "i" || character === "o" || character === "u"){
+        return true
+    }else{
+        console.log("Not a vowel")
+    }
+  }
+
+  console.log(isVowel("a"))
+
+
+  function getTwoLength(str1, str2){
+console.log([str1.length, str2.length])
+  }
+
+  console.log(getTwoLength("hello", "world"))
+
+  function maxOfThree(num1, num2, num3 ){
+let max = []
+max.push(num1, num2, num3)
+max.sort((a, b) => a - b )
+console.log(max)
+console.log(max[max.length-1])
+}
+  console.log(maxOfThree(5,10,10))
+
+
+
+function printLongestWord(strArr){
+//         let count = []
+//     for(let i = 0; i < strArr.length; i++){
+//     let num = 0
+//     if(num < strArr[i].length ){
+//         num = strArr[i].length
+//         count.push(strArr[i])
+//     }
+// }
+// return console.log(count.sort()[count.length -1 ])
+let word = []
+let count = 0
+for(let i=0; i < strArr.length; i++){
+    
+    if(count < strArr[i].length){
+        count = strArr[i].length
+        console.log(count)
+        word.splice(0,1,strArr[i])
+        console.log(word)
+    }
+}
+return word
+}
+console.log(printLongestWord(["hellyesss", "hello", "hellyes"]))
