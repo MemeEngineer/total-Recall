@@ -150,5 +150,140 @@ console.log(bank_account)
 
 //======= Arrays & Control Flow =======
 
-// A Talk About it
+// A. Talk About it
 
+/*
+What are the things in an array called?
+1. element
+
+Do Arrays guarantee those things will be in order?
+2. yes
+
+What real-life thing could you model with an array?
+3.A line, train, ticket system, basically anything like an object.
+*/
+
+// B. Easy Does it
+
+let arr = ["Hello", "World", "!"]
+
+// C. Accessing Elements
+
+const randomThings = [1, 10 , "Hello", true]
+
+// How do you access the 1st element in the array?
+// 1 ) randomThings[0]
+
+
+//Change the value of "hello" to "world"
+
+ randomThings[2] = "world"
+
+// check the value of the array
+console.log(randomThings)
+
+//===== Change values ===========
+
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+//What would you write to access the 3rd element of the array?
+
+ourClass[2]
+//Change the value of "Github" to "Octocat"
+ourClass[4] = "Octocat"
+
+//Add a new element, "Cloud City" to the array
+ourClass.push("Cloud City")
+
+console.log(ourClass)
+
+//====== Mix it up ===
+
+const myArray = [5, 10 , 500, 20]
+
+myArray.push("Aegon", "swag")
+console.log(myArray)
+myArray.shift()
+console.log(myArray)
+myArray.unshift("Bob Marley")
+console.log(myArray)
+myArray.pop()
+console.log(myArray)
+myArray.reverse()
+console.log(myArray)
+
+// It mutates the array as it calls directly on the array
+// Mutate means change
+//It returns the array order but opposite
+
+
+
+// === Biggies Smalls ======
+const int = 3;
+
+if(int <= 100){
+    console.log("Little Number")
+}else{
+    console.log("Big Number")
+}
+
+
+// Monkey in middle
+let num = 11
+if(num < 5){
+    console.log("little number")
+}else if( num > 10){
+    console.log( "big number")
+}else{
+    console.log("Monkey")
+}
+
+// what's in your Closet?
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  console.log(`Kristyn is rocking that ${kristynsCloset[2]} today`)
+  kristynsCloset.splice(6,0,"raybans")
+  kristynsCloset[5]= "stained knit hat"
+  console.log(kristynsCloset)
+
+  thomsCloset[0][0]
+  thomsCloset[1][0]
+
+  console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, ${thomsCloset[2][1]}`)
+
+  thomsCloset[1][2] = "Footie pajamas"
+
+  console.log(thomsCloset)
+
+  //======== Functions ==========
+
+  
