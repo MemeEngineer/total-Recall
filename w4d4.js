@@ -419,3 +419,26 @@ function oldAndLoud(person){
 }
 
 console.log(oldAndLoud(user))
+
+//========= Cat combinator ======
+const cat1 = {
+    name: "meow",
+    breed: "tabby",
+    age: 2,
+}
+const cat2 = {
+    name: "whiskers",
+    breed: "Garfield",
+    age: 2,
+}
+
+console.log(cat1.age)
+console.log(cat1.breed)
+
+function combineCats(mama, papa){
+    return {name: mama.name + papa.name, age: 1, breed: `${mama.breed}-${papa.breed}` }
+}
+
+console.log(combineCats(cat1,cat2))
+console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
